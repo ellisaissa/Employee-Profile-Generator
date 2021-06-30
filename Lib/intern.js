@@ -1,18 +1,13 @@
-class Intern {
-    constructor(employeeName, employeeID, emailAddress, jobTitle) {
-        this.employeeName = employeeName;
-        this.employeeID = employeeID;
-        this.emailAddress = emailAddress;
+const Employee = require("./Employee");
+
+class Intern extends Employee {
+    constructor(props, school) {
+        super(props);
+        this.school= school;
         this.jobTitle = jobTitle;
     }
-    getemployeeName() {
-        return this.employeeName;
-    }
-    getemployeeID() {
-        return this.employeeID;
-    }
-    getEmail() {
-        return this.emailAddress;
+    getSchool() {
+        return this.school;
     }
     getRole() {
         return this.jobTitle;

@@ -1,18 +1,12 @@
-class Engineer {
-    constructor(employeeName, employeeID, emailAddress, jobTitle) {
-        this.employeeName = employeeName;
-        this.employeeID = employeeID;
-        this.emailAddress = emailAddress;
-        this.jobTitle = jobTitle;
+const Employee = require("./Employee");
+
+class Engineer extends Employee {
+    constructor(props, github) {
+        super(props);
+        this.github = github;
     }
-    getemployeeName() {
-        return this.employeeName;
-    }
-    getemployeeID() {
-        return this.employeeID;
-    }
-    getEmail() {
-        return this.emailAddress;
+    getGithub() {
+        return this.github;
     }
     getRole() {
         return this.jobTitle;

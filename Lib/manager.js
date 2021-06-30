@@ -1,18 +1,13 @@
-class Manager {
-    constructor(employeeName, employeeID, emailAddress, jobTitle) {
-        this.employeeName = employeeName;
-        this.employeeID = employeeID;
-        this.emailAddress = emailAddress;
+const Employee = require("./Employee");
+
+class Manager extends Employee {
+    constructor(props, officenumber, jobTitle) {
+        super(props);
+        this.officeumber = officenumber;
         this.jobTitle = jobTitle;
     }
-    getemployeeName() {
-        return this.employeeName;
-    }
-    getemployeeID() {
-        return this.employeeID;
-    }
-    getEmail() {
-        return this.emailAddress;
+    getOfficeNumber(){
+        return this.officenumber;
     }
     getRole() {
         return this.jobTitle;

@@ -1,5 +1,9 @@
-class Employee {
-    constructor(employeeName, employeeID, emailAddress, jobTitle) {
+// import React, {Component} from 'react';
+const React = require("../node_modules/react");
+
+class Employee extends React.Component {
+    constructor(props, employeeName, employeeID, emailAddress, jobTitle) {
+        super(props);
         this.employeeName = employeeName;
         this.employeeID = employeeID;
         this.emailAddress = emailAddress;
