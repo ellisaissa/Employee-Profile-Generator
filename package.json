@@ -1,0 +1,22 @@
+{
+  "name": "employee-profile-generator",
+  "version": "1.0.0",
+  "description": "role and information generator",
+  "main": "index.js",
+  "scripts": {
+    "test": "run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ellisaissa/Employee-Profile-Generator.git"
+  },
+  "keywords": [
+    "generator"
+  ],
+  "author": "ellisa issa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ellisaissa/Employee-Profile-Generator/issues"
+  },
+  "homepage": "https://github.com/ellisaissa/Employee-Profile-Generator#readme"
+}
