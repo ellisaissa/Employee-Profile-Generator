@@ -4,14 +4,14 @@ class Intern extends Employee {
     constructor(props, school) {
         super(props);
         this.school= school;
-        this.jobTitle = jobTitle;
+        this.JobTitle = JobTitle;
+    }
+    getRole() {
+        return this.JobTitle;
     }
     getSchool() {
         return this.school;
     }
-    getRole() {
-        return this.jobTitle;
-    }
-}
+};
 
 module.exports = Intern;

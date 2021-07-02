@@ -2,12 +2,12 @@
 const React = require("../node_modules/react");
 
 class Employee extends React.Component {
-    constructor(props, employeeName, employeeID, emailAddress, jobTitle) {
+    constructor(props, employeeName, employeeID, emailAddress, JobTitle) {
         super(props);
         this.employeeName = employeeName;
         this.employeeID = employeeID;
         this.emailAddress = emailAddress;
-        this.jobTitle = jobTitle;
+        this.JobTitle = JobTitle;
     }
     getemployeeName() {
         return this.employeeName;
@@ -19,8 +19,8 @@ class Employee extends React.Component {
         return this.emailAddress;
     }
     getRole() {
-        return this.jobTitle;
+        return this.JobTitle;
     }
-}
+};
 
 module.exports = Employee;

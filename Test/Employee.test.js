@@ -15,7 +15,6 @@ test("Can set employee id", () => {
   const testValue = 100;
   const e = new Employee("Rachel", testValue);
   expect(e.id).toBe(testValue);
-
 });
 
 
@@ -82,4 +81,4 @@ test("getRole() should return \"Employee\"", () => {
   const testValue = "Employee";
   const e = new Employee("Phoebe", 1, "test@test.com", "Employee");
   expect(e.getemployeeTitle()).toBe(testValue);
-})
+});
