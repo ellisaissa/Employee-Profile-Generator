@@ -130,16 +130,16 @@ async function run() {
         for (j = 0; j < maxTimes; j++) {
             console.log(employeeArray[j])
             html += `<div class="card bg-dark justify-content-center align-items-center" style="width: 18rem;">
-                <div class="col card-header">
+                <div class="header">
                     <h4>${employeeArray[j].employeeName}</h4>
                 </div>
-                <div class="col card-header">
+                <div class="header">
                     <h4>${employeeArray[j].title}</h4 >
                 </div >
-                <ul class="list-group list-group-flush text">
-                    <li class="list-group-item">ID: ${employeeArray[j].id}</li>
-                    <li class="list-group-item">emailAddress: ${employeeArray[j].emailAddress}</li>
-                    <li class="list-group-item"> ${displayTitle(employeeArray[j])}</li>
+                <ul class="info">
+                    <li class="item-1">ID: ${employeeArray[j].id}</li>
+                    <li class="item-2">emailAddress: ${employeeArray[j].emailAddress}</li>
+                    <li class="item-3"> ${displayTitle(employeeArray[j])}</li>
                 </ul>
             </div > `;
         }
@@ -154,9 +154,15 @@ async function run() {
                  <meta charset="UTF-8">
                      <meta employeeName="viewport" content="width=device-width, initial-scale=1.0">
                         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-                            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-                                integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-                                    <title>Document</title>
+                            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+                                // integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+                                <link rel="stylesheet" href="style.css">
+                                </link>
+                                <link rel="preconnect" href="https://fonts.googleapis.com">
+                                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                                <link href="https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap" rel="stylesheet">
+                                </head>
+                                    <title>Team</title>
                                         <style>
                                             .row {
                                                 display: flex;
@@ -168,14 +174,14 @@ async function run() {
                                             .card {
                                                 padding: 15px;
                                                 border-radius: 6px;
-                                                background-color: white;
-                                                color: pink;
+                                                background-color: yellow;
+                                                color: black;
                                                 margin: 20px;
                                             }
                                             .text {
                                                 padding: 15px;
                                                 border-radius: 6px;
-                                                background-color: pink;
+                                                background-color: blue;
                                                 color: black;
                                                 margin: 20px;
                                             }
