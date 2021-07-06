@@ -1,0 +1,17 @@
+.header {
+    font-family: 'Otomanopee One', sans-serif;
+}
+.team {
+    max-width:950px;
+    margin: 5em;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: yellow;
+    color: black;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 1;
+    box-shadow: red;
+}
